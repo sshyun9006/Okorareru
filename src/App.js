@@ -91,6 +91,10 @@ function App() {
     setCopied(true);
     setTimeout(() => setCopied(false), 2000); // 클릭 후 '복사되었습니다' 문장 2초 후 삭제
   };
+
+
+
+
   
 
   return (
@@ -121,6 +125,8 @@ function App() {
       {/** 이미지 갤러리 */}
       <Gallery items={images} onClick={(e) => openModal(e.index)} />
       {/** 이미지 갤러리 END */}
+
+
 
 
       {/* 계좌번호 복사버튼 */}
