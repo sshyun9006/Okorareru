@@ -46,7 +46,7 @@
       "last 1 firefox version",
       "last 1 safari version"
     ],
-    "homepage": "https://sshyun9006.github.io/okorareru.git"
+    "homepage": "https://github.com/sshyun9006/okorareru.git"
   },
   "devDependencies": {
     "@types/react-copy-to-clipboard": "^5.0.7"
