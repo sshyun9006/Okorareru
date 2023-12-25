@@ -10,6 +10,9 @@ import DDayCounter from './DDayCounter'; // DDayCounter 파일의 경로에 맞�
 import Gallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
 
+// git add src/수정한 js 파일 or css
+// git commit src/수정한 파일 -m "커밋내용"
+// git push origin master
 
 function App() {
   const [position, setPosition] = useState(0);
