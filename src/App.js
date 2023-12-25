@@ -84,7 +84,7 @@ function App() {
 
   const handleCopyClick = () => { // 클릭 이벤트
     setCopied(true);
-    setTimeout(() => setCopied(false), 2000); // 클릭 후 '복사되었습니다' 문장 2초후에 삭제
+    setTimeout(() => setCopied(false), 2000); // 클릭 후 '복사되었습니다' 문장 2초 후 삭제
   };
   
 
@@ -125,7 +125,7 @@ function App() {
           style={{ cursor: 'pointer', width: '80%', height: '59px', marginTop: "200px"}}
         />
       </CopyToClipboard>
-      {copied && <span style={{ color: 'black', fontSize: '10px' }}>복사되었습니다.</span>}
+      {copied && <span style={{ color: 'black', fontSize: '10px' }}>복사 되었습니다.</span>}
 
       {/* 계좌번호 복사버튼 END */}
       
