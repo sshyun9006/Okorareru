@@ -93,7 +93,7 @@ function App() {
 
       {isDesktopOrMobile !== true ? 
         <div style={{border:"1px solid #DBDBDB", width:"1000px", textAlign: "center"}}>
-          {/** 데스크탑으로 접속 시 메시지 표시*/}
+          {/** 데스크탑으로 접속 시 메시지 표시--*/}
         <h1>모바일로 접속해주세요</h1>
       </div>
        : 
@@ -102,7 +102,7 @@ function App() {
 
         <DDayCounter /> {/* D-day 카운터 */}
 
-        {/* gif 화면 적용*/}
+        {/* gif 화면 적용*/} 
       <img src={chiGif} style={{ width: '100%', height: '100%' }} />
       
       <p className="desc3" style={{ opacity: (position + 10) / 200, marginTop: "200px"}}> 나랏말싸미 듕귁에 달아 문자와로 사맛디 아니할쎄</p>
