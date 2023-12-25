@@ -10,7 +10,9 @@ import DDayCounter from './DDayCounter'; // DDayCounter 파일의 경로에 맞�
 import Gallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
 
-// git add src/수정한 js 파일 or css
+// git add src/수정한 js 파일 or css or  ----> 
+// --->  add . 사용 (다음 변경(commit)을 기록할 때까지 변경분을 모아놓기 위해서 사용 OR -A 사용 (작업 디렉토리 내의 모든 변경 내용을 몽땅 스테이징 영역으로 넘기고 싶을 때)
+
 // git commit src/수정한 파일 -m "커밋내용"
 // git push origin master
 
