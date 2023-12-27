@@ -9,6 +9,8 @@ import React from 'react';
 import DDayCounter from './DDayCounter'; // DDayCounter 파일의 경로에 맞게 수정
 import Gallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
+import ModalPopup from './ModalPopup';
+import PhoneLink from './PhoneLink';
 
 // git add src/수정한 js 파일 or css or  ----> 
 // --->  add . 사용 (다음 변경(commit)을 기록할 때까지 변경분을 모아놓기 위해서 사용 OR -A 사용 (작업 디렉토리 내의 모든 변경 내용을 몽땅 스테이징 영역으로 넘기고 싶을 때)
@@ -127,18 +129,24 @@ function App() {
       {/** 이미지 갤러리 END */}
 
 
-
+      {/** 팝업버튼 */}
+      <ModalPopup />
+        <div>
+      <PhoneLink phoneNumber="01095603936" />
+      </div>
 
       {/* 계좌번호 복사버튼 */}
+
       <CopyToClipboard text={accountNumberText} onCopy={handleCopyClick}>
         <img
           src={copyBtn} // 이미지 경로
-          style={{ cursor: 'pointer', width: '80%', height: '59px', marginTop: "200px"}}
+          style={{cursor: 'pointer', width: '80%', height: '59px'}}
         />
-      </CopyToClipboard>
+        </CopyToClipboard>
+
       {copied && <span style={{ color: 'black', fontSize: '10px' }}>복사 되었습니다.</span>}
 
-      {/* 계좌번호 복사버튼 END */}
+    {/* 계좌번호 복사버튼 END */}
       
       </div>} {/** isDesktopOrMobile END */}
 
