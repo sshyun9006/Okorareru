@@ -4,9 +4,9 @@ const KakaoMap = () => {
   return (
     <div>
       <Map
-        center={{ lat: 37.506320759000715, lng: 127.05368251210247 }}
+        center={{ lat: 37.5656326031847, lng: 126.97847432656822 }}
         style={{
-          width: '340px',
+          width: '100%',
           height: '400px',
           borderRadius: '20px',
         }}
@@ -14,7 +14,7 @@ const KakaoMap = () => {
       
         <MapMarker
           style={{ border: 'tranparent' }}
-          position={{ lat: 37.506320759000715, lng: 127.05368251210247 }}
+          position={{ lat: 37.5656326031847, lng: 126.97847432656822 }}
         >
         
           <div
