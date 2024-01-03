@@ -11,6 +11,9 @@ import Gallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import ModalPopup from './ModalPopup';
 import PhoneLink from './PhoneLink';
+import KakaoMap from './KakaoMap';
+import KakaoTalkButton from './KakaoTalkButton';
+
 
 // git add src/수정한 js 파일 or css or  ----> 
 // --->  add . 사용 (다음 변경(commit)을 기록할 때까지 변경분을 모아놓기 위해서 사용 OR -A 사용 (작업 디렉토리 내의 모든 변경 내용을 몽땅 스테이징 영역으로 넘기고 싶을 때)
@@ -94,11 +97,6 @@ function App() {
     setTimeout(() => setCopied(false), 2000); // 클릭 후 '복사되었습니다' 문장 2초 후 삭제
   };
 
-
-
-
-  
-
   return (
     <div className="wrapper">
 
@@ -132,8 +130,17 @@ function App() {
       {/** 팝업버튼 */}
       <ModalPopup />
         <div>
-      <PhoneLink phoneNumber="01095603936" />
+      <PhoneLink phoneNumber="010545454" />
       </div>
+
+      {/** 카카오맵 버튼 */}
+      <KakaoMap /> 
+
+      {/** 카카오톡 버튼 */}
+
+        {/* <KakaoTalkButton targetKakaoId="dptmdpdlcl" message="메시지 전송" /> */}
+ 
+       
 
       {/* 계좌번호 복사버튼 */}
 

@@ -62,6 +62,11 @@ code {
   left: 50%;
 }
 
+@font-face{
+  font-family: 'NPSfontRegular';
+  src: "./font/NPSfont_regular.ttf";
+}
+
 .desc2 {
   font-weight: bold;
   font-size: 60px;
@@ -72,8 +77,9 @@ code {
 .desc3 {
   font-weight: bold;
   text-align: center;
+  font-family: 'NPSfontRegular';
   font-size: 15px;
-  color: #666;
+  color: #a90c0c;
   opacity: 1;
 }
 
@@ -108,4 +114,13 @@ img {
   font-size: 18px;
   text-align: center;
   /* 필요한 다른 스타일 속성들을 추가할 수 있습니다. */
+}
+
+.kakao-talk-button {
+  background: url('https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png') no-repeat;
+  background-size: contain; /* 배경 이미지 크기를 버튼 영역에 맞게 조절 */
+  width: 30px; /* 버튼의 너비를 이미지의 너비에 따라 자동으로 조절 */
+  height: 30px; /* 버튼의 높이를 이미지의 높이에 따라 자동으로 조절 */
+  border: none;
+  cursor: pointer;
 }
