@@ -134,8 +134,9 @@ function App() {
       </div>
 
       {/** 카카오맵 버튼 */}
-      <KakaoMap /> 
-
+      <div>
+        <KakaoMap /> 
+      </div>
       {/** 카카오톡 버튼 */}
 
         {/* <KakaoTalkButton targetKakaoId="dptmdpdlcl" message="메시지 전송" /> */}

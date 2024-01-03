@@ -6,7 +6,7 @@ const KakaoMap = () => {
       <Map
         center={{ lat: 37.506320759000715, lng: 127.05368251210247 }}
         style={{
-          width: '360px',
+          width: '340px',
           height: '400px',
           borderRadius: '20px',
         }}
@@ -20,14 +20,14 @@ const KakaoMap = () => {
           <div
             style={{
               color: '#9971ff',
-              fontSize: '15px',
+              fontSize: '14px',
               fontWeight: '900',
               border: '4px solid #9971ff',
               borderRadius: '8px',
               padding: '2.5px',
             }}
           >
-            🎬 딱세욱 약혐 🎬
+            🎬 히치히치야야 🎬
           </div>
         </MapMarker>
       </Map>
