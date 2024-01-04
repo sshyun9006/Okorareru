@@ -7,9 +7,7 @@ const PhoneLink = ({ phoneNumber }) => {
   };
 
   return (
-    <button onClick={handleLinkClick}>
-      전화 걸기
-    </button>
+    <button className='telButton' onClick={handleLinkClick}></button>
   );
 };
 

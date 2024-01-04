@@ -1,40 +1,33 @@
 import React, { useState, useEffect } from 'react';
-import moment from 'moment';
 import './index.css';
 
 const DDayCounter = () => {
-  const dDayDate = '2025-12-01'; // D-day로 설정하려는 날짜
+  const dDayDate = new Date('2025-12-31T00:00:00');
 
-  const [timeLeft, setTimeLeft] = useState('');
+  // 현재 날짜와 D-Day 날짜 간의 차이를 계산하는 함수
+  const calculateRemainingDays = () => {
+    const currentDate = new Date();
+    const timeDifference = dDayDate.getTime() - currentDate.getTime();
+    const remainingDays = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
+    return remainingDays;
+  };
 
+  // 상태 변수 설정
+  const [remainingDays, setRemainingDays] = useState(calculateRemainingDays);
+
+  // 1초마다 남은 일수 업데이트
   useEffect(() => {
-    const now = moment();
-    const dDay = moment(dDayDate);
-    const duration = moment.duration(dDay.diff(now));
-
-    const hours = duration.asHours().toFixed(0);
-    const minutes = duration.minutes();
-    const seconds = duration.seconds();
-
-    setTimeLeft(
-      `D-${hours > 0 ? `${hours}시간 ` : ''}${minutes}분 ${seconds}초`
-    );
-
     const intervalId = setInterval(() => {
-      const newDuration = moment.duration(dDay.diff(moment()));
-      const newHours = newDuration.asHours().toFixed(0);
-      const newMinutes = newDuration.minutes();
-      const newSeconds = newDuration.seconds();
-
-      setTimeLeft(`D-${newHours > 0 ? `${newHours}시간 ` : ''}${newMinutes}분 ${newSeconds}초`);
+      setRemainingDays(calculateRemainingDays);
     }, 1000);
 
+    // 컴포넌트가 언마운트될 때 인터벌 해제
     return () => clearInterval(intervalId);
-  }, [dDayDate]);
+  }, []);
 
   return (
     <div className='dday-container'>
-      <p>{timeLeft}</p>
+      D-{remainingDays}
     </div>
   );
 };

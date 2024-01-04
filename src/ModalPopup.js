@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
+import hanmi from './img/hanmi.gif';
 
 const ModalPopup = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -23,7 +24,7 @@ const ModalPopup = () => {
   
     return (
       <div>
-        <button onClick={handleButtonClick}>팝업 열기</button>
+        <button onClick={handleButtonClick}>이한미는 봐라</button>
         
         <Modal
           ariaHideApp={false}
@@ -32,6 +33,8 @@ const ModalPopup = () => {
           contentLabel="팝업"
           style={modalStyle}
         >
+          <img src={hanmi} style={{ width: '90%', height: '60%', padding: '10px'}} />
+
           <div>
             <p>히치히치야야야</p>
             <p>뚱뚱뚱뚱치</p>

@@ -94,112 +94,70 @@ function App() {
 
   const handleCopyClick = () => { // 클릭 이벤트
     setCopied(true);
-    setTimeout(() => setCopied(false), 2000); // 클릭 후 '복사되었습니다' 문장 2초 후 삭제
+    setTimeout(() => setCopied(false), 1000); // 클릭 후 '복사되었습니다' 문장 1초 후 삭제
   };
 
   return (
-    <div className="wrapper">
+    <div>
 
       {isDesktopOrMobile !== true ? 
         <div style={{border:"1px solid #DBDBDB", width:"1000px", textAlign: "center"}}>
           {/** 데스크탑으로 접속 시 메시지 표시--*/}
-          <DDayCounter /> {/* D-day 카운터 */}
-
-{/* gif 화면 적용*/} 
-<img src={chiGif} style={{ width: '100%', height: '100%' }} />
-
-<p className="desc3" style={{ opacity: (position + 10) / 200, marginTop: "200px"}}> 나랏말싸미 듕귁에 달아 문자와로 사맛디 아니할쎄</p>
-<p className="desc3" style={{ opacity: (position - 100) / 200, }} > 이런 젼차로 어린 백셩이 니르고져 홇베이셔도 </p>
-<p className="desc3" style={{ opacity: (position - 200) / 200, }} > 마참내 제 뜨들 시러펴디 몯핧 노미하니라 </p>
-<p className="desc3" style={{ opacity: (position - 300) / 200, }} > 내 이랄 윙하여 어엿비너겨 새로 스믈 여덟 짜랄 맹가노니 </p>
-<p className="desc3" style={{ opacity: (position - 400) / 200, marginBottom: "200px"}} > 사람마다 해여 수비니겨 날로 쑤메 뻔한킈 하고져 할따라미니라 </p>
-
-<p className="desc5">갤러리</p>
-
-{/** 이미지 갤러리 */}
-<Gallery items={images} onClick={(e) => openModal(e.index)} />
-{/** 이미지 갤러리 END */}
-
-
-{/** 팝업버튼 */}
-<ModalPopup />
-<div>
-<PhoneLink phoneNumber="010545454" />
-</div>
-
-{/** 카카오맵 버튼 */}
-<div>
-<KakaoMap /> 
-</div>
-{/** 카카오톡 버튼 */}
-
-{/* <KakaoTalkButton targetKakaoId="dptmdpdlcl" message="메시지 전송" /> */}
-
-
-
-{/* 계좌번호 복사버튼 */}
-
-<CopyToClipboard text={accountNumberText} onCopy={handleCopyClick}>
-<img
-  src={copyBtn} // 이미지 경로
-  style={{cursor: 'pointer', width: '80%', height: '59px'}}
-/>
-</CopyToClipboard>
-
-{copied && <span style={{ color: 'black', fontSize: '10px' }}>복사 되었습니다.</span>}
-
-{/* 계좌번호 복사버튼 END */}
+          
       </div>
        : 
       <div style={{border:"1px solid #DBDBDB", width:"100%"}}>
         {/** 모바일 화면 시작 */}
-
+        <br />
         <DDayCounter /> {/* D-day 카운터 */}
+        <br />
+
+        <p> 이한미가 귀찮게함</p>
+              {/** 팝업버튼 */}
+      <div>
+        <ModalPopup />
+      </div>
 
         {/* gif 화면 적용*/} 
-      <img src={chiGif} style={{ width: '100%', height: '100%' }} />
-      
-      <p className="desc3" style={{ opacity: (position + 10) / 200, marginTop: "200px"}}> 나랏말싸미 듕귁에 달아 문자와로 사맛디 아니할쎄</p>
-      <p className="desc3" style={{ opacity: (position - 100) / 200, }} > 이런 젼차로 어린 백셩이 니르고져 홇베이셔도 </p>
-      <p className="desc3" style={{ opacity: (position - 200) / 200, }} > 마참내 제 뜨들 시러펴디 몯핧 노미하니라 </p>
-      <p className="desc3" style={{ opacity: (position - 300) / 200, }} > 내 이랄 윙하여 어엿비너겨 새로 스믈 여덟 짜랄 맹가노니 </p>
-      <p className="desc3" style={{ opacity: (position - 400) / 200, marginBottom: "200px"}} > 사람마다 해여 수비니겨 날로 쑤메 뻔한킈 하고져 할따라미니라 </p>
+      <img src={chiGif} style={{ width: '95%', height: '100%', padding: '10px', marginBottom: '20px'}} />
 
-      <p className="desc5">갤러리</p>
+      <div className='commentImg'>
+        <br/>
+          <p className="desc3" style={{ opacity: (position + 10) / 200, marginTop: "150px"}}> 나랏말싸미 듕귁에 달아 문자와로 사맛디 아니할쎄</p>
+          <p className="desc3" style={{ opacity: (position - 100) / 200, }} > 이런 젼차로 어린 백셩이 니르고져 홇베이셔도 </p>
+          <p className="desc3" style={{ opacity: (position - 200) / 200, }} > 마참내 제 뜨들 시러펴디 몯핧 노미하니라 </p>
+          <p className="desc3" style={{ opacity: (position - 300) / 200, }} > 내 이랄 윙하여 어엿비너겨 새로 스믈 여덟 짜랄 맹가노니 </p>
+          <p className="desc3" style={{ opacity: (position - 400) / 200, marginBottom: "150px"}} > 사람마다 해여 수비니겨 날로 쑤메 뻔한킈 하고져 할따라미니라 </p>
+          <br/>
+      </div>
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <p style={{ marginLeft: '20%', fontSize: '13px'}}>텍스트 &nbsp;&nbsp; </p> <p style={{fontSize: '20px', marginRight: '30%'}}> 예제 </p>
+        <PhoneLink phoneNumber="010545454" />
+      </div>
+      <div style={{ display: 'flex', alignItems: 'center', marginTop: '-20px' }}>
+        <p style={{ marginLeft: '20%', fontSize: '13px'}}>텍스트 &nbsp;&nbsp; </p> <p style={{fontSize: '20px', marginRight: '30%'}}> 예제 </p>
+        <PhoneLink phoneNumber="0109999158" />
+      </div>
 
       {/** 이미지 갤러리 */}
       <Gallery items={images} onClick={(e) => openModal(e.index)} />
-      {/** 이미지 갤러리 END */}
-
-
-      {/** 팝업버튼 */}
-      <ModalPopup />
-        <div>
-      <PhoneLink phoneNumber="010545454" />
-      </div>
 
       {/** 카카오맵 버튼 */}
-      <div>
+      <div style={{marginTop: "150px"}}>
+        <p style={{ textAlign: 'center', fontSize: '20px', fontWeight: 'bold'}}>위치</p>
         <KakaoMap /> 
       </div>
-      {/** 카카오톡 버튼 */}
-
-        {/* <KakaoTalkButton targetKakaoId="dptmdpdlcl" message="메시지 전송" /> */}
- 
-       
 
       {/* 계좌번호 복사버튼 */}
 
       <CopyToClipboard text={accountNumberText} onCopy={handleCopyClick}>
         <img
           src={copyBtn} // 이미지 경로
-          style={{cursor: 'pointer', width: '80%', height: '59px'}}
+          style={{ marginLeft: '30%', height: '40px'}}
         />
         </CopyToClipboard>
 
       {copied && <span style={{ color: 'black', fontSize: '10px' }}>복사 되었습니다.</span>}
-
-    {/* 계좌번호 복사버튼 END */}
       
       </div>} {/** isDesktopOrMobile END */}
 
