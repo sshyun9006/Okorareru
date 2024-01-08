@@ -9,11 +9,9 @@ import React from 'react';
 import DDayCounter from './DDayCounter'; // DDayCounter 파일의 경로에 맞게 수정
 import Gallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
-import ModalPopup from './ModalPopup';
+import ModalPopMain from './ModalPopMain';
 import PhoneLink from './PhoneLink';
 import KakaoMap from './KakaoMap';
-import KakaoTalkButton from './KakaoTalkButton';
-
 
 // git add src/수정한 js 파일 or css or  ----> 
 // --->  add . 사용 (다음 변경(commit)을 기록할 때까지 변경분을 모아놓기 위해서 사용 OR -A 사용 (작업 디렉토리 내의 모든 변경 내용을 몽땅 스테이징 영역으로 넘기고 싶을 때)
@@ -112,11 +110,10 @@ function App() {
         <DDayCounter /> {/* D-day 카운터 */}
         <br />
 
-        <p> 이한미가 귀찮게함</p>
-              {/** 팝업버튼 */}
-      <div>
-        <ModalPopup />
-      </div>
+        {/** 팝업버튼 */}
+        <div>
+          <ModalPopMain />
+        </div>
 
         {/* gif 화면 적용*/} 
       <img src={chiGif} style={{ width: '95%', height: '100%', padding: '10px', marginBottom: '20px'}} />
@@ -158,7 +155,9 @@ function App() {
         </CopyToClipboard>
 
       {copied && <span style={{ color: 'black', fontSize: '10px' }}>복사 되었습니다.</span>}
-      
+
+
+      <br/><br/><br/><br/><br/><br/><br/><br/>
       </div>} {/** isDesktopOrMobile END */}
 
        {/**className="wrapper End */}
