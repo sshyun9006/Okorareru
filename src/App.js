@@ -191,25 +191,25 @@ function App() {
       </div>
 
       {/** 전화연결 */}
-      <div style={{ display: 'flex', alignItems: 'center', lineHeight: "5%", marginTop: "50px", color: "#eee6c4"}}>
-        <p style={{ marginLeft: '20%', marginTop: "25px", fontFamily: "omyuPretty"}}>예제 &nbsp;&nbsp; </p> 
-        <p style={{fontSize: '30px', marginRight: '30%', fontFamily: "omyuPretty"}}> 홍길동 </p>
+      <div style={{ display: 'flex', alignItems: 'center', lineHeight: "5%", marginTop: "50px", color: "#cd853f"}}>
+        <p style={{ marginLeft: '20%', marginTop: "25px", fontFamily: "JejuMyeongjo"}}>예제 &nbsp;&nbsp; </p> 
+        <p style={{fontSize: '30px', marginRight: '30%', fontFamily: "JejuMyeongjo"}}> 홍길동 </p>
         <PhoneLink phoneNumber="01011111111" />
       </div>
-      <div style={{ display: 'flex', alignItems: 'center', marginTop: '-20px', lineHeight: "5%" , marginBottom: "50px", color: "#eee6c4"}}>
-        <p style={{ marginLeft: '20%', marginTop: "25px", fontFamily: "omyuPretty"}}>예제 &nbsp;&nbsp; </p> 
-        <p style={{fontSize: '30px', marginRight: '30%', fontFamily: "omyuPretty"}}> 홍길동 </p>
+      <div style={{ display: 'flex', alignItems: 'center', marginTop: '-20px', lineHeight: "5%" , marginBottom: "50px", color: "#cd853f"}}>
+        <p style={{ marginLeft: '20%', marginTop: "25px", fontFamily: "JejuMyeongjo"}}>예제 &nbsp;&nbsp; </p> 
+        <p style={{fontSize: '30px', marginRight: '30%', fontFamily: "JejuMyeongjo"}}> 홍길동 </p>
         <PhoneLink phoneNumber="01022222222" />
       </div>
 
 
-      <div style={{ display: 'flex', marginTop: '-20px', marginBottom: "50px", color: "#eee6c4"}}>
-        <p style={{ fontSize: '15px', fontFamily: "omyuPretty", marginTop: "15px", marginLeft:"10%"}}>텍스트</p> &nbsp;&nbsp;
-        <p style={{fontSize: '30px', fontFamily: "omyuPretty", marginTop: "5px"}}> 홍길동 </p>
+      <div style={{ display: 'flex', marginTop: '-20px', marginBottom: "50px", color: "#cd853f"}}>
+        <p style={{ fontSize: '14px', fontFamily: "JejuMyeongjo", marginTop: "15px", marginLeft:"10%"}}>텍스트</p> &nbsp;&nbsp;
+        <p style={{fontSize: '25px', fontFamily: "JejuMyeongjo", marginTop: "5px"}}> 홍길동 </p>
         
 
-        <p style={{fontSize: '15px', fontFamily: "omyuPretty", marginLeft: "25%", marginTop: "15px"}}>텍스트 &nbsp;&nbsp; </p> 
-        <p style={{fontSize: '30px', fontFamily: "omyuPretty", marginTop: "5px"}}> 홍길동 </p>
+        <p style={{fontSize: '14px', fontFamily: "JejuMyeongjo", marginLeft: "25%", marginTop: "15px"}}>텍스트 &nbsp;&nbsp; </p> 
+        <p style={{fontSize: '25px', fontFamily: "JejuMyeongjo", marginTop: "5px"}}> 홍길동 </p>
       </div>
 
       <div style={{ display: 'flex', marginTop: '-70px', marginBottom: "50px", marginLeft: "20%"}}>
@@ -221,13 +221,13 @@ function App() {
 
       </div>
 
-      <div style={{ display: 'flex', marginTop: '-20px', marginBottom: "50px", color: "#eee6c4"}}>
-        <p style={{ fontSize: '15px', fontFamily: "omyuPretty", marginTop: "15px", marginLeft:"10%"}}>텍스트</p> &nbsp;&nbsp;
-        <p style={{fontSize: '30px', fontFamily: "omyuPretty", marginTop: "5px"}}> 홍길동 </p>
+      <div style={{ display: 'flex', marginTop: '-20px', marginBottom: "50px", color: "#cd853f"}}>
+        <p style={{ fontSize: '14px', fontFamily: "JejuMyeongjo", marginTop: "15px", marginLeft:"10%"}}>텍스트</p> &nbsp;&nbsp;
+        <p style={{fontSize: '25px', fontFamily: "JejuMyeongjo", marginTop: "5px"}}> 홍길동 </p>
         
 
-        <p style={{fontSize: '15px', fontFamily: "omyuPretty", marginLeft: "25%", marginTop: "15px"}}>텍스트 &nbsp;&nbsp; </p> 
-        <p style={{fontSize: '30px', fontFamily: "omyuPretty", marginTop: "5px"}}> 홍길동 </p>
+        <p style={{fontSize: '14px', fontFamily: "JejuMyeongjo", marginLeft: "25%", marginTop: "15px"}}>텍스트 &nbsp;&nbsp; </p> 
+        <p style={{fontSize: '25px', fontFamily: "JejuMyeongjo", marginTop: "5px"}}> 홍길동 </p>
       </div>
 
       <div style={{ display: 'flex', marginTop: '-70px', marginBottom: "50px", marginLeft: "20%"}}>
@@ -247,7 +247,7 @@ function App() {
 
       {/** 카카오맵 버튼 */}
       <div style={{marginTop: "150px"}}>
-        <p style={{ textAlign: 'center', fontSize: '20px', fontWeight: 'bold'}}>위치</p>
+        <p style={{ textAlign: 'center', fontSize: '30px', fontWeight: 'bold', fontFamily: 'JejuMyeongjo', color: "#cd853f"}}>- 오시는 길 -</p>
         <KakaoMap /> 
       </div>
 

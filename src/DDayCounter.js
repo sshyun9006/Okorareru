@@ -26,7 +26,7 @@ const DDayCounter = () => {
   }, []);
 
   return (
-    <div className='dday-container' style={{fontFamily:"omyuPretty"}}>
+    <div className='dday-container' style={{fontFamily:"JejuMyeongjo", marginTop: "30px"}}>
       D-{remainingDays}
     </div>
   );

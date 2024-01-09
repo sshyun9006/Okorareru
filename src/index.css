@@ -49,9 +49,9 @@ code {
 .mainTitle{
   font-weight: bold;
   text-align: center;
-  font-family: 'omyuPretty';
+  font-family: 'JejuMyeongjo';
   font-size: 30px;
-  color: #eee6c4;
+  color: #cd853f;
 }
 
 .commentImg{
@@ -62,7 +62,7 @@ code {
 .desc3 {
   font-weight: bold;
   text-align: center;
-  font-family: 'omyuPretty';
+  font-family: 'JejuMyeongjo';
   font-size: 20px;
   color: #777777;
   opacity: 1;
@@ -76,7 +76,7 @@ img {
 
 /* DDayCounter.css */
 .dday-container {
-  color: #eee6c4;
+  color: #cd853f;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
@@ -92,10 +92,10 @@ img {
 }
 
 .btnHelped{
-  background: #eee6c4;
+  background: #cd853f;
   border-radius: 20px;
   border: none;
-  font-family: "YeongdeokSea";
+  font-family: "JejuMyeongjo";
   font-size: 15px;
   color: white;
   padding: 10px 20px;
