@@ -274,9 +274,10 @@ function App() {
       <div style={{marginTop: "150px"}}>
         <p style={{ textAlign: 'center', fontSize: '30px', fontWeight: 'bold', fontFamily: 'JejuMyeongjo', color: "#cd853f"}}>- 오시는 길 -</p>
         <KakaoMap /> 
-      
-        <OpenKakaoMapButton /> 
-      
+      </div>
+
+      <div style={{textAlign:"center"}}>
+      <OpenKakaoMapButton /> 
       </div>
 
       {/* 안내사항 */}
