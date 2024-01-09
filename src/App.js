@@ -192,48 +192,48 @@ function App() {
 
       {/** 전화연결 */}
       <div style={{ display: 'flex', alignItems: 'center', lineHeight: "5%", marginTop: "50px", color: "#cd853f"}}>
-        <p style={{ marginLeft: '20%', marginTop: "25px", fontFamily: "JejuMyeongjo"}}>예제 &nbsp;&nbsp; </p> 
-        <p style={{fontSize: '30px', marginRight: '20%', fontFamily: "JejuMyeongjo"}}> 홍길동 </p>
+        <p style={{ marginLeft: '20%', marginTop: "25px", fontFamily: "JejuMyeongjo", fontWeight: "bold"}}>예제 &nbsp;&nbsp; </p> 
+        <p style={{fontSize: '30px', marginRight: '20%', fontFamily: "JejuMyeongjo", fontWeight: "bold"}}> 홍길동 </p>
         <PhoneLink phoneNumber="01011111111" />
       </div>
       <div style={{ display: 'flex', alignItems: 'center', marginTop: '-20px', lineHeight: "5%" , marginBottom: "50px", color: "#cd853f"}}>
-        <p style={{ marginLeft: '20%', marginTop: "25px", fontFamily: "JejuMyeongjo"}}>예제 &nbsp;&nbsp; </p> 
-        <p style={{fontSize: '30px', marginRight: '20%', fontFamily: "JejuMyeongjo"}}> 홍길동 </p>
+        <p style={{ marginLeft: '20%', marginTop: "25px", fontFamily: "JejuMyeongjo", fontWeight: "bold"}}>예제 &nbsp;&nbsp; </p> 
+        <p style={{fontSize: '30px', marginRight: '20%', fontFamily: "JejuMyeongjo", fontWeight: "bold"}}> 홍길동 </p>
         <PhoneLink phoneNumber="01022222222" />
       </div>
 
 
       <div style={{ display: 'flex', marginTop: '80px', marginBottom: "50px", color: "#cd853f"}}>
-        <p style={{ fontSize: '14px', fontFamily: "JejuMyeongjo", marginTop: "15px", marginLeft:"10%"}}>텍스트</p> &nbsp;&nbsp;
-        <p style={{fontSize: '25px', fontFamily: "JejuMyeongjo", marginTop: "5px"}}> 홍길동 </p>
+        <p style={{ fontSize: '14px', fontFamily: "JejuMyeongjo", marginTop: "15px", marginLeft:"10%", fontWeight: "bold"}}>텍스트</p> &nbsp;&nbsp;
+        <p style={{fontSize: '25px', fontFamily: "JejuMyeongjo", marginTop: "5px", fontWeight: "bold"}}> 홍길동 </p>
         
 
-        <p style={{fontSize: '14px', fontFamily: "JejuMyeongjo", marginLeft: "25%", marginTop: "15px"}}>텍스트 &nbsp;&nbsp; </p> 
-        <p style={{fontSize: '25px', fontFamily: "JejuMyeongjo", marginTop: "5px"}}> 홍길동 </p>
+        <p style={{fontSize: '14px', fontFamily: "JejuMyeongjo", marginLeft: "20%", marginTop: "15px", fontWeight: "bold"}}>텍스트 &nbsp;&nbsp; </p> 
+        <p style={{fontSize: '25px', fontFamily: "JejuMyeongjo", marginTop: "5px", fontWeight: "bold"}}> 홍길동 </p>
       </div>
 
       <div style={{ display: 'flex', marginTop: '-55px', marginBottom: "50px", marginLeft: "20%"}}>
         <PhoneLink phoneNumber="01033333333" />
 
-        <div style={{ display: 'flex', marginLeft: "58%"}}>
+        <div style={{ display: 'flex', marginLeft: "56%"}}>
           <PhoneLink phoneNumber="01044444444" />
         </div>
 
       </div>
 
       <div style={{ display: 'flex', marginTop: '-20px', marginBottom: "50px", color: "#cd853f"}}>
-        <p style={{ fontSize: '14px', fontFamily: "JejuMyeongjo", marginTop: "15px", marginLeft:"10%"}}>텍스트</p> &nbsp;&nbsp;
-        <p style={{fontSize: '25px', fontFamily: "JejuMyeongjo", marginTop: "5px"}}> 홍길동 </p>
+        <p style={{ fontSize: '14px', fontFamily: "JejuMyeongjo", marginTop: "15px", marginLeft:"10%", fontWeight: "bold"}}>텍스트</p> &nbsp;&nbsp;
+        <p style={{fontSize: '25px', fontFamily: "JejuMyeongjo", marginTop: "5px", fontWeight: "bold"}}> 홍길동 </p>
         
 
-        <p style={{fontSize: '14px', fontFamily: "JejuMyeongjo", marginLeft: "25%", marginTop: "15px"}}>텍스트 &nbsp;&nbsp; </p> 
-        <p style={{fontSize: '25px', fontFamily: "JejuMyeongjo", marginTop: "5px"}}> 홍길동 </p>
+        <p style={{fontSize: '14px', fontFamily: "JejuMyeongjo", marginLeft: "20%", marginTop: "15px", fontWeight: "bold"}}>텍스트 &nbsp;&nbsp; </p> 
+        <p style={{fontSize: '25px', fontFamily: "JejuMyeongjo", marginTop: "5px", fontWeight: "bold"}}> 홍길동 </p>
       </div>
 
       <div style={{ display: 'flex', marginTop: '-55px', marginBottom: "50px", marginLeft: "20%"}}>
         <PhoneLink phoneNumber="01055555555" />
 
-        <div style={{ display: 'flex', marginLeft: "58%"}}>
+        <div style={{ display: 'flex', marginLeft: "56%"}}>
           <PhoneLink phoneNumber="01066666666" />
         </div>
 
