@@ -12,6 +12,7 @@ import 'react-image-gallery/styles/css/image-gallery.css';
 import ModalPopMain from './ModalPopMain';
 import PhoneLink from './PhoneLink';
 import KakaoMap from './KakaoMap';
+import OpenKakaoMapButton from './OpenKakaoMapButton';
 
 // git add src/수정한 js 파일 or css or  ----> 
 // --->  add . 사용 (다음 변경(commit)을 기록할 때까지 변경분을 모아놓기 위해서 사용 OR -A 사용 (작업 디렉토리 내의 모든 변경 내용을 몽땅 스테이징 영역으로 넘기고 싶을 때)
@@ -273,15 +274,15 @@ function App() {
       <div style={{marginTop: "150px"}}>
         <p style={{ textAlign: 'center', fontSize: '30px', fontWeight: 'bold', fontFamily: 'JejuMyeongjo', color: "#cd853f"}}>- 오시는 길 -</p>
         <KakaoMap /> 
+      
+        <OpenKakaoMapButton /> 
+      
       </div>
 
-      {/* 계좌번호 복사버튼 */}
+      {/* 안내사항 */}
       <div>        
         <p style={{fontFamily: "JejuMyeongjo", fontSize: '20px', fontWeight: "bold"}}> 히바오집 10층</p>
-        <p style={{marginTop:"-37px",fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 서울시 서대문구 홍제천로 190-12
-        <CopyToClipboard text={accountNumberText} onCopy={handleCopyClick}>
-          <img src={copyBtn} style={{height:"40px"}}/>
-        </CopyToClipboard>
+        <p style={{marginTop:"-10px",fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 서울시 서대문구 홍제천로 190-12
         </p>
         <p style={{marginTop:"-10px", fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 02-000-0000 </p>
 
@@ -313,6 +314,12 @@ function App() {
         </div>
 
       </div>
+
+      {/* <CopyToClipboard text={accountNumberText} onCopy={handleCopyClick}>
+          <img src={copyBtn} style={{height:"40px"}}/>
+        </CopyToClipboard> */}
+
+      
 
       <br/><br/><br/><br/><br/><br/><br/><br/>
       <div style={{backgroundColor:"#808080", height:"100px", lineHeight:"100px", textAlign:"center", margin:"auto", fontFamily: 'JejuMyeongjo', fontWeight: "bold"}}>

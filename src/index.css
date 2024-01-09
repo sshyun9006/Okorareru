@@ -107,6 +107,24 @@ img {
   margin-left: 20px;
 }
 
+.btnKakaoMap{
+  background: #cd853f;
+  border: none;
+  font-family: "JejuMyeongjo";
+  font-size: 15px;
+  color: white;
+  padding: 10px 58px;
+}
+
+.btnNaverMap{
+  background: #cd853f;
+  border: none;
+  font-family: "JejuMyeongjo";
+  font-size: 15px;
+  color: white;
+  padding: 10px 49.8px;
+}
+
 .madeBy{
   font-family: "Amarillo";
   text-align: center;
