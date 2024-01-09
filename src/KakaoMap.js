@@ -25,7 +25,7 @@ const KakaoMap = () => {
               fontWeight: '900',
               border: '4px solid #cd853f',
               borderRadius: '8px',
-              padding: '2.5px',
+              padding: '2.5px 5px',
             }}
           >
             🧡 히치히치야야 🧡
