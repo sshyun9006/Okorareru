@@ -9,6 +9,7 @@ const KakaoMap = () => {
           width: '100%',
           height: '400px',
           borderRadius: '20px',
+          marginTop: "50px",
         }}
       >
       
@@ -19,15 +20,15 @@ const KakaoMap = () => {
         
           <div
             style={{
-              color: '#9971ff',
+              color: '#cd853f',
               fontSize: '14px',
               fontWeight: '900',
-              border: '4px solid #9971ff',
+              border: '4px solid #cd853f',
               borderRadius: '8px',
               padding: '2.5px',
             }}
           >
-            🎬 히치히치야야 🎬
+            🧡 히치히치야야 🧡
           </div>
         </MapMarker>
       </Map>

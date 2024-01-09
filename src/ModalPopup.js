@@ -24,10 +24,12 @@ const ModalPopup = () => {
   
     const modalStyle = {
       content: {
-        width: '80%', // 가로 크기를 화면의 90%로 설정
+        width: '55%', // 가로 크기를 화면의 90%로 설정
         height: '500px',
         maxWidth: '400px', // 최대 가로 크기를 400px로 제한
-        left: 20,
+        top:"auto",
+        bottom: "20%",
+        left: 10,
       },
     };
 

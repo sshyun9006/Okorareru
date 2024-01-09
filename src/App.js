@@ -135,13 +135,31 @@ function App() {
     };
     
   // 복사할 문장
-  const accountNumberText = '뭐라도 복사';
+  const accountNumberText = '서울시 서대문구 홍제천로 190-12';
   const [copied, setCopied] = useState(false);
 
   const handleCopyClick = () => { // 클릭 이벤트
     setCopied(true);
     setTimeout(() => setCopied(false), 1000); // 클릭 후 '복사되었습니다' 문장 1초 후 삭제
   };
+
+  // 선 그리기
+  const hrStyle = {
+    border: 'none', 
+    borderTop: '2px solid #cd853f',
+    width: '105px', 
+    marginTop: '-20px', 
+    marginLeft: "45px",
+  };
+
+  const hrStyle2 = {
+    border: 'none', 
+    borderTop: '2px solid #cd853f',
+    width: '105px', 
+    marginTop: '-10px', 
+    marginLeft: "238px",
+  };
+
 
   return (
     <div>
@@ -161,21 +179,17 @@ function App() {
 
         <p className='mainTitle' style={{fontSize: "15px"}}> MM/DD </p>
         <p className='mainTitle' style={{lineHeight: "5%"}}> 홍길동 | 홍길동 </p>
-        <p className='mainTitle' style={{lineHeight: "5%"}}> COMMENT </p>
+        <p className='mainTitle'> COMMENT </p>
 
         <br />
         <br />
         <br />
-        {/** 팝업버튼 */}
-        <div>
-          <ModalPopMain />
-        </div>
 
         {/* gif 화면 적용*/} 
-      <img src={chiGif} style={{ width: '95%', height: '100%', padding: '10px', marginBottom: '20px'}} />
+      <img src={chiGif} style={{ width: '95%', height: '100%', padding: '10px', marginBottom: '40px'}} />
 
       <p className='mainTitle' style={{lineHeight: "5%", fontSize: "20px"}}> YYYY. MM. DD. SAT PM HH.MM </p>
-      <p className='mainTitle' style={{lineHeight: "5%", fontSize: "20px"}}> place </p>
+      <p className='mainTitle' style={{fontSize: "20px"}}> place </p>
 
       <br />
       <br />
@@ -196,14 +210,23 @@ function App() {
         <p style={{fontSize: '30px', marginRight: '20%', fontFamily: "JejuMyeongjo", fontWeight: "bold"}}> 홍길동 </p>
         <PhoneLink phoneNumber="01011111111" />
       </div>
-      <div style={{ display: 'flex', alignItems: 'center', marginTop: '-20px', lineHeight: "5%" , marginBottom: "50px", color: "#cd853f"}}>
+      <div style={{ display: 'flex', alignItems: 'center', marginTop: '-10px', lineHeight: "5%" , marginBottom: "50px", color: "#cd853f"}}>
         <p style={{ marginLeft: '20%', marginTop: "25px", fontFamily: "JejuMyeongjo", fontWeight: "bold"}}>예제 &nbsp;&nbsp; </p> 
         <p style={{fontSize: '30px', marginRight: '20%', fontFamily: "JejuMyeongjo", fontWeight: "bold"}}> 홍길동 </p>
         <PhoneLink phoneNumber="01022222222" />
       </div>
 
+      <div style={{ display: 'flex', marginTop: '80px', marginBottom: "15px", color: "#cd853f", fontWeight: "bold"}}>
+        <p style={{fontFamily: "JejuMyeongjo", marginLeft:"13.5%", fontWeight: "bold", fontSize:"18px"}}>신랑측 혼주</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <p style={{fontFamily: "JejuMyeongjo", marginLeft:"20%", fontWeight: "bold", fontSize:"18px"}}>신부측 혼주</p>
+      </div>
+      <div>
+      <hr style={hrStyle} />
+      <hr style={hrStyle2} />
+      </div>
 
-      <div style={{ display: 'flex', marginTop: '80px', marginBottom: "50px", color: "#cd853f"}}>
+        {/* 신랑측 혼주 */}
+      <div style={{ display: 'flex', marginTop: '20px', marginBottom: "50px", color: "#cd853f"}}>
         <p style={{ fontSize: '14px', fontFamily: "JejuMyeongjo", marginTop: "15px", marginLeft:"10%", fontWeight: "bold"}}>텍스트</p> &nbsp;&nbsp;
         <p style={{fontSize: '25px', fontFamily: "JejuMyeongjo", marginTop: "5px", fontWeight: "bold"}}> 홍길동 </p>
         
@@ -221,6 +244,7 @@ function App() {
 
       </div>
 
+        {/* 신부측 혼주 */}
       <div style={{ display: 'flex', marginTop: '-20px', marginBottom: "50px", color: "#cd853f"}}>
         <p style={{ fontSize: '14px', fontFamily: "JejuMyeongjo", marginTop: "15px", marginLeft:"10%", fontWeight: "bold"}}>텍스트</p> &nbsp;&nbsp;
         <p style={{fontSize: '25px', fontFamily: "JejuMyeongjo", marginTop: "5px", fontWeight: "bold"}}> 홍길동 </p>
@@ -240,7 +264,7 @@ function App() {
       </div>      
 
       {/** 이미지 갤러리 */}
-      <div className='mainTitle' style={{marginBlock: "20px", marginTop: "80px"}}>
+      <div className='mainTitle' style={{marginBlock: "20px", marginTop: "80px", marginBottom: "50px"}}>
         - Gallary -
       </div>
       <Gallery items={images} onClick={(e) => openModal(e.index)} />
@@ -252,18 +276,59 @@ function App() {
       </div>
 
       {/* 계좌번호 복사버튼 */}
-
-      <CopyToClipboard text={accountNumberText} onCopy={handleCopyClick}>
-        <img
-          src={copyBtn} // 이미지 경로
-          style={{ marginLeft: '30%', height: '40px'}}
-        />
+      <div>        
+        <p style={{fontFamily: "JejuMyeongjo", fontSize: '20px', fontWeight: "bold"}}> 히바오집 10층</p>
+        <p style={{marginTop:"-37px",fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 서울시 서대문구 홍제천로 190-12
+        <CopyToClipboard text={accountNumberText} onCopy={handleCopyClick}>
+          <img src={copyBtn} style={{height:"40px"}}/>
         </CopyToClipboard>
+        </p>
+        <p style={{marginTop:"-10px", fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 02-000-0000 </p>
 
-      {copied && <span style={{ color: 'black', fontSize: '10px' }}>복사 되었습니다.</span>}
+        <p style={{fontFamily: "JejuMyeongjo", fontSize: '20px', fontWeight: "bold"}}> 지하철 안내</p>
+        <p style={{marginTop:"-10px", fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 3호선 홍제역 하차(1번출구) </p>
 
+        <p style={{fontFamily: "JejuMyeongjo", fontSize: '20px', fontWeight: "bold"}}> 버스 안내</p>
+        <p style={{marginTop:"-10px", fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 홍제역 하차, 서대문구청 하차 </p>
+        <p style={{marginTop:"-10px", fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 지선버스(초록): 7016, 7018 </p>
+
+        <p style={{fontFamily: "JejuMyeongjo", fontSize: '20px', fontWeight: "bold"}}> 마음 전할 곳 </p>
+        <p style={{marginTop:"-10px", fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 신랑 측 혼주: </p>
+        <p style={{marginTop:"-10px", fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 국민은행 000-000000-00000 (예금주: 홍길동)</p>
+        <p style={{marginTop:"-10px", fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 국민은행 000-000000-00000 (예금주: 홍길동)</p>
+        <br/>
+        <p style={{marginTop:"-10px", fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 신부 측 혼주: </p>
+        <p style={{marginTop:"-10px", fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 국민은행 000-000000-00000 (예금주: 홍길동)</p>
+        <p style={{marginTop:"-10px", fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 국민은행 000-000000-00000 (예금주: 홍길동)</p>
+        <br />
+        <p style={{marginTop:"-10px", fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 신랑: 국민은행 000-000000-00000 (예금주: 홍길동)</p>
+        <p style={{marginTop:"-10px", fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 신부: 국민은행 000-000000-00000 (예금주: 홍길동)</p>
+
+        <p style={{fontFamily: "JejuMyeongjo", fontSize: '20px', fontWeight: "bold"}}> 기타안내 </p>
+        <p style={{marginTop:"-10px", fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 히치 살빼야데!! </p>
+
+        {/** 팝업버튼 */}
+        <div>
+          <ModalPopMain />
+        </div>
+
+      </div>
 
       <br/><br/><br/><br/><br/><br/><br/><br/>
+      <div style={{backgroundColor:"#808080", height:"100px", lineHeight:"100px", textAlign:"center", margin:"auto", fontFamily: 'JejuMyeongjo', fontWeight: "bold"}}>
+        YYYY. MM. DD
+      </div>
+
+      <br/>
+      <br/>
+
+      <div className='madeBy'>
+        made by ssh
+      </div>
+      <br/>
+      <br/>
+
+
       </div>} {/** isDesktopOrMobile END */}
 
        {/**className="wrapper End */}

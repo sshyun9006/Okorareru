@@ -46,6 +46,11 @@ code {
   src: url("./font/Cafe24Ssurround.ttf") format("truetype");
 }
 
+@font-face{
+  font-family: 'Amarillo';
+  src: url("./font/Amarillo.ttf") format("truetype");
+}
+
 .mainTitle{
   font-weight: bold;
   text-align: center;
@@ -100,4 +105,16 @@ img {
   color: white;
   padding: 10px 20px;
   margin-left: 20px;
+}
+
+.madeBy{
+  font-family: "Amarillo";
+  text-align: center;
+  font-Size: 12px;
+}
+
+.underline {
+  border-bottom: 2px solid #000; /* 선의 스타일 및 색상을 설정합니다. */
+  width: 100px; /* 선의 길이를 조절합니다. 필요에 따라 조절하세요. */
+  margin: 10px 0; /* 선의 상단과 하단 간격을 조절합니다. 필요에 따라 조절하세요. */
 }
