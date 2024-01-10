@@ -3,6 +3,8 @@ import Modal from 'react-modal';
 import ModalPopup from './ModalPopup';
 import ModalPopup2 from './ModalPopup2';
 
+Modal.setAppElement('#root'); // 모달을 렌더링할 DOM 요소를 설정
+
 const ModalPopMain = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -15,6 +17,9 @@ const ModalPopMain = () => {
     };
   
     const modalStyle = {
+      overlay: {
+        zIndex: 1000, // 모달 레이어의 z-index 값을 조절
+      },
       content: {
         width: '80%', // 가로 크기를 화면의 90%로 설정
         height: '500px',
@@ -35,6 +40,7 @@ const ModalPopMain = () => {
           onRequestClose={handleCloseModal}
           contentLabel="팝업"
           style={modalStyle}
+          
         >
         <ModalPopup />
 

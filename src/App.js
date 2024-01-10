@@ -168,6 +168,7 @@ function App() {
       {isDesktopOrMobile !== true ? 
         <div style={{border:"1px solid #DBDBDB", width:"1000px", textAlign: "center"}}>
           {/** 데스크탑으로 접속 시 메시지 표시--*/}
+          <h1> 모바일로 접속 </h1>
           
       </div>
        : 

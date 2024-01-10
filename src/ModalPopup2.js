@@ -23,6 +23,9 @@ const ModalPopup2 = () => {
     };
 
     const modalStyle = {
+      overlay: {
+        zIndex: 1100, // 모달 레이어의 z-index 값을 조절
+      },
         content: {
           width: '80%', // 가로 크기를 화면의 90%로 설정
           height: '500px',
