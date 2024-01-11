@@ -19,7 +19,7 @@ code {
   font-size: 24px;
   margin: 1.89%;
   width: 96%;
-  height: 3000px;
+  height: 100%;
   /* 설정 */
   position: absolute;
   background-color: white;
@@ -138,6 +138,5 @@ img {
 }
 
 .custom-modal {
-  /* 원하는 스타일을 추가하세요 */
   z-index: 1000;
 }
