@@ -24,7 +24,7 @@ const KakaoMap = () => {
               fontSize: '14px',
               fontWeight: '900',
               border: '4px solid #cd853f',
-              borderRadius: '8px',
+             // borderRadius: '8px',
               padding: '2.5px 5px',
             }}
           >

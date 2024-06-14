@@ -198,11 +198,11 @@ function App() {
       <br />
       <div className='commentImg'>
         <br/>
-          <p className="desc3" style={{ opacity: (position - 400) / 200, marginTop: "150px"}}> 나랏말싸미 듕귁에 달아 문자와로 사맛디 아니할쎄</p>
-          <p className="desc3" style={{ opacity: (position - 500) / 200, }} > 이런 젼차로 어린 백셩이 니르고져 홇베이셔도 </p>
-          <p className="desc3" style={{ opacity: (position - 600) / 200, }} > 마참내 제 뜨들 시러펴디 몯핧 노미하니라 </p>
-          <p className="desc3" style={{ opacity: (position - 700) / 200, }} > 내 이랄 윙하여 어엿비너겨 새로 스믈 여덟 짜랄 맹가노니 </p>
-          <p className="desc3" style={{ opacity: (position - 800) / 200, marginBottom: "150px"}} > 사람마다 해여 수비니겨 날로 쑤메 뻔한킈 하고져 할따라미니라 </p>
+          <p className="desc3" style={{ opacity: (position - 400) / 200, marginTop: "150px"}}>Love is not something you feel, it is something you do.</p>
+          <p className="desc3" style={{ opacity: (position - 500) / 200, }} >In a good marriage, each partner should support the other.</p>
+          <p className="desc3" style={{ opacity: (position - 600) / 200, }} >Marriage is a partnership in which each inspires and supports the other.</p>
+          <p className="desc3" style={{ opacity: (position - 700) / 200, }} >Cherish the small moments and make time for each other.</p>
+          <p className="desc3" style={{ opacity: (position - 800) / 200, marginBottom: "150px"}} >A good marriage is built on trust, respect, and love.</p>
           <br/>
       </div>
 
