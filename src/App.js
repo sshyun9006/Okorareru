@@ -22,6 +22,8 @@ import OpenKakaoMapButton from './OpenKakaoMapButton';
 
 function App() {
   const [position, setPosition] = useState(0);
+  const [selected, setSelected] = useState(null);
+
   function onScroll() {
     setPosition(window.scrollY);
   }
@@ -143,6 +145,10 @@ function App() {
     setCopied(true);
     setTimeout(() => setCopied(false), 1000); // 클릭 후 '복사되었습니다' 문장 1초 후 삭제
   };
+
+  const handleButtonClick = (type) => {
+    setSelected(selected === type ? null : type); // 같은 버튼 클릭 시 토글
+};
 
   // 선 그리기
   const hrStyle = {
@@ -295,6 +301,199 @@ function App() {
         <p style={{marginTop:"-10px", fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 홍제역 하차, 서대문구청 하차 </p>
         <p style={{marginTop:"-10px", fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 지선버스(초록): 7016, 7018 </p>
 
+        <div style={{ marginTop: "20px", fontFamily: "JejuMyeongjo", fontSize: "20px", fontWeight: "bold" }}>
+  마음 전할 곳
+</div>
+<div style={{ display: "flex", flexDirection: "row", gap: "20px", margin: "10px 0" }}>
+  {/* 신랑측 혼주 버튼 */}
+  <div style={{ flex: 1 }}>
+    <button
+      onClick={() => handleButtonClick("groom")}
+      style={{
+        padding: "10px 20px",
+        fontSize: "16px",
+        fontWeight: "bold",
+        color: "#fff",
+        backgroundColor: "#cd853f",
+        border: "none",
+        borderRadius: "5px",
+        cursor: "pointer",
+        width: "100%",
+        fontFamily: "JejuMyeongjo",
+      }}
+    >
+      신랑 측
+    </button>
+    {selected === "groom" && (
+      <div style={{ marginTop: "10px", fontFamily: "JejuMyeongjo", fontSize: "15px" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "5px" }}>
+          <span style={{ fontFamily: "JejuMyeongjo" }}>&nbsp;&nbsp;국민은행 성승현</span>
+          <CopyToClipboard
+            text="000-000000-00000"
+            onCopy={() => alert("계좌번호가 복사되었습니다!")}
+          >
+            <button
+              style={{
+                backgroundColor: "#cd853f",
+                color: "#fff",
+                border: "none",
+                borderRadius: "3px",
+                padding: "3px 6px",
+                cursor: "pointer",
+                fontFamily: "JejuMyeongjo",
+              }}
+            >
+              복사
+            </button>
+          </CopyToClipboard>
+        </div>
+        <div style={{ fontFamily: "JejuMyeongjo", marginLeft: "10px" }}>000-000000-00000</div>
+        <br />
+        <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "5px" }}>
+          <span style={{ fontFamily: "JejuMyeongjo" }}>&nbsp;&nbsp;국민은행 홍길동</span>
+          <CopyToClipboard
+            text="000-000000-00000"
+            onCopy={() => alert("계좌번호가 복사되었습니다!")}
+          >
+            <button
+              style={{
+                backgroundColor: "#cd853f",
+                color: "#fff",
+                border: "none",
+                borderRadius: "3px",
+                padding: "3px 6px",
+                cursor: "pointer",
+                fontFamily: "JejuMyeongjo",
+              }}
+            >
+              복사
+            </button>
+          </CopyToClipboard>
+        </div>
+        <div style={{ fontFamily: "JejuMyeongjo", marginLeft: "10px" }}>000-000000-00000</div>
+        <br />
+        <div style={{ display: "flex", alignItems: "center", gap: "10px", marginTop: "5px" }}>
+          <span style={{ fontFamily: "JejuMyeongjo" }}>&nbsp;&nbsp;국민은행 홍길동</span>
+          <CopyToClipboard
+            text="000-000000-00000"
+            onCopy={() => alert("계좌번호가 복사되었습니다!")}
+          >
+            <button
+              style={{
+                backgroundColor: "#cd853f",
+                color: "#fff",
+                border: "none",
+                borderRadius: "3px",
+                padding: "3px 6px",
+                cursor: "pointer",
+                fontFamily: "JejuMyeongjo",
+              }}
+            >
+              복사
+            </button>
+          </CopyToClipboard>
+        </div>
+        <div style={{ fontFamily: "JejuMyeongjo", marginLeft: "10px" }}>000-000000-00000</div>
+      </div>
+    )}
+  </div>
+
+  {/* 신부측 혼주 버튼 */}
+  <div style={{ flex: 1 }}>
+    <button
+      onClick={() => handleButtonClick("bride")}
+      style={{
+        padding: "10px 20px",
+        fontSize: "16px",
+        fontWeight: "bold",
+        color: "#fff",
+        backgroundColor: "#cd853f",
+        border: "none",
+        borderRadius: "5px",
+        cursor: "pointer",
+        width: "100%",
+        fontFamily: "JejuMyeongjo",
+      }}
+    >
+      신부 측
+    </button>
+    {selected === "bride" && (
+      <div style={{ marginTop: "10px", fontFamily: "JejuMyeongjo", fontSize: "15px" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "5px" }}>
+          <span style={{ fontFamily: "JejuMyeongjo" }}>&nbsp;&nbsp;국민은행 주혜련</span>
+          <CopyToClipboard
+            text="000-000000-00000"
+            onCopy={() => alert("계좌번호가 복사되었습니다!")}
+          >
+            <button
+              style={{
+                backgroundColor: "#cd853f",
+                color: "#fff",
+                border: "none",
+                borderRadius: "3px",
+                padding: "3px 6px",
+                cursor: "pointer",
+                fontFamily: "JejuMyeongjo",
+              }}
+            >
+              복사
+            </button>
+          </CopyToClipboard>
+        </div>
+        <div style={{ fontFamily: "JejuMyeongjo", marginLeft: "10px" }}>000-000000-00000</div>
+        <br />
+        <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "5px" }}>
+          <span style={{ fontFamily: "JejuMyeongjo" }}>&nbsp;&nbsp;국민은행 홍길동</span>
+          <CopyToClipboard
+            text="000-000000-00000"
+            onCopy={() => alert("계좌번호가 복사되었습니다!")}
+          >
+            <button
+              style={{
+                backgroundColor: "#cd853f",
+                color: "#fff",
+                border: "none",
+                borderRadius: "3px",
+                padding: "3px 6px",
+                cursor: "pointer",
+                fontFamily: "JejuMyeongjo",
+              }}
+            >
+              복사
+            </button>
+          </CopyToClipboard>
+        </div>
+        <div style={{ fontFamily: "JejuMyeongjo", marginLeft: "10px" }}>000-000000-00000</div>
+        <br />
+        <div style={{ display: "flex", alignItems: "center", gap: "10px", marginTop: "5px" }}>
+          <span style={{ fontFamily: "JejuMyeongjo" }}>&nbsp;&nbsp;국민은행 홍길동</span>
+          <CopyToClipboard
+            text="000-000000-00000"
+            onCopy={() => alert("계좌번호가 복사되었습니다!")}
+          >
+            <button
+              style={{
+                backgroundColor: "#cd853f",
+                color: "#fff",
+                border: "none",
+                borderRadius: "3px",
+                padding: "3px 6px",
+                cursor: "pointer",
+                fontFamily: "JejuMyeongjo",
+              }}
+            >
+              복사
+            </button>
+          </CopyToClipboard>
+        </div>
+        <div style={{ fontFamily: "JejuMyeongjo", marginLeft: "10px" }}>000-000000-00000</div>
+      </div>
+    )}
+  </div>
+</div>
+
+
+{/* 
         <p style={{fontFamily: "JejuMyeongjo", fontSize: '20px', fontWeight: "bold"}}> 마음 전할 곳 </p>
         <p style={{marginTop:"-10px", fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 신랑 측 혼주: </p>
         <p style={{marginTop:"-10px", fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 국민은행 000-000000-00000 (예금주: 홍길동)</p>
@@ -305,7 +504,7 @@ function App() {
         <p style={{marginTop:"-10px", fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 국민은행 000-000000-00000 (예금주: 홍길동)</p>
         <br />
         <p style={{marginTop:"-10px", fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 신랑: 국민은행 000-000000-00000 (예금주: 홍길동)</p>
-        <p style={{marginTop:"-10px", fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 신부: 국민은행 000-000000-00000 (예금주: 홍길동)</p>
+        <p style={{marginTop:"-10px", fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 신부: 국민은행 000-000000-00000 (예금주: 홍길동)</p> */}
 
         <p style={{fontFamily: "JejuMyeongjo", fontSize: '20px', fontWeight: "bold"}}> 기타안내 </p>
         <p style={{marginTop:"-10px", fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 히치 살빼야데!! </p>
