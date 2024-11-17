@@ -186,7 +186,7 @@ function App() {
       
 
         <p className='mainTitle' style={{fontSize: "15px"}}> MM/DD </p>
-        <p className='mainTitle' style={{lineHeight: "5%"}}> 홍길동 | 홍길동 </p>
+        <p className='mainTitle' style={{lineHeight: "5%"}}> 성승현 | 주혜련 </p>
         <p className='mainTitle'> COMMENT </p>
 
         <br />
@@ -214,13 +214,13 @@ function App() {
 
       {/** 전화연결 */}
       <div style={{ display: 'flex', alignItems: 'center', lineHeight: "5%", marginTop: "50px", color: "#cd853f"}}>
-        <p style={{ marginLeft: '20%', marginTop: "25px", fontFamily: "JejuMyeongjo", fontWeight: "bold"}}>예제 &nbsp;&nbsp; </p> 
-        <p style={{fontSize: '30px', marginRight: '20%', fontFamily: "JejuMyeongjo", fontWeight: "bold"}}> 홍길동 </p>
+        <p style={{ marginLeft: '20%', marginTop: "25px", fontFamily: "JejuMyeongjo", fontWeight: "bold"}}>신랑 &nbsp;&nbsp; </p> 
+        <p style={{fontSize: '30px', marginRight: '20%', fontFamily: "JejuMyeongjo", fontWeight: "bold"}}> 성승현 </p>
         <PhoneLink phoneNumber="01011111111" />
       </div>
       <div style={{ display: 'flex', alignItems: 'center', marginTop: '-10px', lineHeight: "5%" , marginBottom: "50px", color: "#cd853f"}}>
-        <p style={{ marginLeft: '20%', marginTop: "25px", fontFamily: "JejuMyeongjo", fontWeight: "bold"}}>예제 &nbsp;&nbsp; </p> 
-        <p style={{fontSize: '30px', marginRight: '20%', fontFamily: "JejuMyeongjo", fontWeight: "bold"}}> 홍길동 </p>
+        <p style={{ marginLeft: '20%', marginTop: "25px", fontFamily: "JejuMyeongjo", fontWeight: "bold"}}>신부 &nbsp;&nbsp; </p> 
+        <p style={{fontSize: '30px', marginRight: '20%', fontFamily: "JejuMyeongjo", fontWeight: "bold"}}> 주혜련 </p>
         <PhoneLink phoneNumber="01022222222" />
       </div>
 
@@ -506,13 +506,13 @@ function App() {
         <p style={{marginTop:"-10px", fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 신랑: 국민은행 000-000000-00000 (예금주: 홍길동)</p>
         <p style={{marginTop:"-10px", fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 신부: 국민은행 000-000000-00000 (예금주: 홍길동)</p> */}
 
-        <p style={{fontFamily: "JejuMyeongjo", fontSize: '20px', fontWeight: "bold"}}> 기타안내 </p>
-        <p style={{marginTop:"-10px", fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 히치 살빼야데!! </p>
+        {/* <p style={{fontFamily: "JejuMyeongjo", fontSize: '20px', fontWeight: "bold"}}> 기타안내 </p>
+        <p style={{marginTop:"-10px", fontFamily: "JejuMyeongjo", fontSize: '15px'}}> 뚱뚱뚱뚱뚱치 </p> */}
 
         {/** 팝업버튼 */}
-        <div>
+        {/* <div>
           <ModalPopMain />
-        </div>
+        </div> */}
 
       </div>
 

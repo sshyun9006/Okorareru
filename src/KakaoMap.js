@@ -1,41 +1,54 @@
-import { Map, MapMarker } from "react-kakao-maps-sdk";
+import { Map, MapMarker, CustomOverlayMap } from "react-kakao-maps-sdk";
 
 const KakaoMap = () => {
+  const center = { lat: 37.563862, lng: 126.986175 };
+
   return (
     <div>
       <Map
-        center={{ lat: 37.5656326031847, lng: 126.97847432656822 }}
+        center={center}
         style={{
-          width: '100%',
-          height: '400px',
-          borderRadius: '20px',
+          width: "100%",
+          height: "400px",
+          borderRadius: "20px",
           marginTop: "50px",
         }}
+        level={3} // 지도 줌 레벨 설정
       >
-      
+        {/* 기본 마커 */}
         <MapMarker
-          style={{ border: 'tranparent' }}
-          position={{ lat: 37.5656326031847, lng: 126.97847432656822 }}
+          style={{ border: 'transparent' }}
+          position={{ lat: 37.563862, lng: 126.986175 }}
         >
-        
+        </MapMarker>
+
+        {/* 커스텀 오버레이 */}
+        <CustomOverlayMap position={center}>
           <div
             style={{
-              color: '#cd853f',
-              fontSize: '14px',
-              fontWeight: '900',
-              border: '4px solid #cd853f',
-             // borderRadius: '8px',
-              padding: '2.5px 5px',
+              position: "relative",
+              background: "rgb(255, 255, 255)",
+              border: "2px solid #cd853f",
+              zIndex: 1,
+              display: "block",
+              width: "200px",
+              height: "20px",
+              color: "#cd853f",
+              fontSize: "14px",
+              fontWeight: "900",
+              padding: "5px",
+              textAlign: "center",
+              borderRadius: "10px",
+              transform: "translate(0%, -220%)", 
+              marginTop: "30px", 
             }}
           >
-            🧡 히치히치야야 🧡
+            🧡 명동성당 파밀리아채플 🧡
           </div>
-        </MapMarker>
+        </CustomOverlayMap>
       </Map>
     </div>
-    //핀에 적힐 이름 (위치 이름)
   );
 };
-
 
 export default KakaoMap;
